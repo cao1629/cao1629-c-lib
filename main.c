@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <sys/epoll.h>
 
 struct Employee {
     int id;
@@ -7,6 +8,8 @@ struct Employee {
 };
 
 int main(int argc, char* argv[]) {
-    printf("%zu\n", sizeof(struct Employee));
+   for (int i = 0; i < 10; i++) {
+     printf("Number = %d\n", i);
+   }
 }
 

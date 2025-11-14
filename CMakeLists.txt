@@ -2,4 +2,11 @@
 cmake_minimum_required(VERSION 3.10)
 project(cao1629-c-lib VERSION 1.0)
 
-add_executable(main main.c)
+include(FetchContent)
+FetchContent_Declare(
+        googletest
+        URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
+)
+FetchContent_MakeAvailable(googletest)
+
+add_subdirectory(io)

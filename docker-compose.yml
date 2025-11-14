@@ -1,3 +1,0 @@
-services:
-  ubuntu-dev-env:
-    build: .
